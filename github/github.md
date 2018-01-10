@@ -1,5 +1,3 @@
-# 目录
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
@@ -23,9 +21,15 @@
   - [关于 wikis](#%E5%85%B3%E4%BA%8E-wikis)
   - [通过在线界面添加维基页面](#%E9%80%9A%E8%BF%87%E5%9C%A8%E7%BA%BF%E7%95%8C%E9%9D%A2%E6%B7%BB%E5%8A%A0%E7%BB%B4%E5%9F%BA%E9%A1%B5%E9%9D%A2)
   - [搜索](#%E6%90%9C%E7%B4%A2)
-    - [Search within a user or organization's repositories](#search-within-a-user-or-organizations-repositories)
-    - [Search within a wiki page title or body text](#search-within-a-wiki-page-title-or-body-text)
-    - [Search by last updated date](#search-by-last-updated-date)
+- [issue](#issue)
+  - [从 milestones 新建 issue](#%E4%BB%8E-milestones-%E6%96%B0%E5%BB%BA-issue)
+  - [从 projects 新建 issue](#%E4%BB%8E-projects-%E6%96%B0%E5%BB%BA-issue)
+- [milestones](#milestones)
+  - [创建一个 milestones](#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA-milestones)
+  - [将 issue 和 milestones 关联](#%E5%B0%86-issue-%E5%92%8C-milestones-%E5%85%B3%E8%81%94)
+- [Projects](#projects)
+  - [关于 Projects](#%E5%85%B3%E4%BA%8E-projects)
+  - [自动将 issue 链接到 to do 那列](#%E8%87%AA%E5%8A%A8%E5%B0%86-issue-%E9%93%BE%E6%8E%A5%E5%88%B0-to-do-%E9%82%A3%E5%88%97)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -316,7 +320,7 @@ You can search wikis by using search qualifiers in any combination to narrow you
 - For a list of search syntaxes that you can add to any search qualifier to further improve your results, see "[Understanding the search syntax](https://help.github.com/articles/understanding-the-search-syntax)".
 - Use quotations around multi-word search terms. For example, if you want to search for issues with the label "In progress," you'd search for `label:"in progress"`. Search is not case sensitive.
 
-### Search within a user or organization's repositories
+> **Search within a user or organization's repositories**
 
 To find wiki pages from all repositories owned by a certain user or organization, use the `user` or `org`qualifier. To find wiki pages from a specific repository, use the `repo` qualifier.
 
@@ -326,7 +330,7 @@ To find wiki pages from all repositories owned by a certain user or organization
 | `org:*ORGNAME*`              | [**org:github**](https://github.com/search?q=org%3Agithub&type=Wikis&utf8=%E2%9C%93) matches wikis in repositories owned by the GitHub organization. |
 | `repo:*USERNAME/REPOSITORY*` | [**repo:defunkt/gibberish**](https://github.com/search?q=user%3Adefunkt&type=Wikis) matches wiki pages from @defunkt's "gibberish" repository. |
 
-### Search within a wiki page title or body text
+> **Search within a wiki page title or body text**
 
 The `in` qualifier limits the search to the wiki page title or body text. Without the qualifier, both the title and body text are searched.
 
@@ -335,7 +339,7 @@ The `in` qualifier limits the search to the wiki page title or body text. Withou
 | `in:title` | [**usage in:title**](https://github.com/search?q=usage+in%3Atitle&type=Wikis) matches wiki page titles with the word "usage." |
 | `in:body`  | [**installation in:body**](https://github.com/search?q=installation+in%3Abody&type=Wikis) matches wiki pages with the word "installation" in their main body text. |
 
-### Search by last updated date
+> **Search by last updated date**
 
 The `updated` qualifier matches wiki pages that were last updated within the specified date range.
 
@@ -345,5 +349,130 @@ Dates support [greater than, less than, and range qualifiers](https://help.githu
 | ---------------------- | ---------------------------------------- |
 | `updated:*YYYY-MM-DD*` | [**usage updated:>2016-01-01**](https://github.com/search?q=usage+updated%3A%3E2016-01-01&type=Wikis) matches wiki pages with the word "usage" that were last updated after 2016-01-01. |
 
+# issue
+
+- issue 的种类用 label 标记
+- issue 的处理进度用 milestones 标记
+- 更高端的管理方式，[使用 Projects](#Projects)
+
+## 从 milestones 新建 issue
+
+1. [新建一个 milestones](#创建一个-milestones) 
+
+2. 在创建的 milestones 里点击 new issue ，添加一个 issue。
+
+   ![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbkv7lndtj20se04ct8s.jpg)
+
+3. 相关信息填写好后 submit 就可以了
+
+   ![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbkwnf8jlj20tf0bmmxh.jpg)
+
+## 从 projects 新建 issue
+
+移步至 [projects](#Projects)
+
+# milestones
+
+您可以使用里程碑跟踪存储库中的问题组或进程请求的**进度**。
+
+s里程碑里可以和问题以及请求相关联。
+
+## 创建一个 milestones
+
+1. 点击 issues-》milestones
+
+![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbk785ix7j20t30dzq3s.jpg)
+
+2. 点击 new milestone
+
+   ![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbk8doghpj20s103qweg.jpg)
+
+3. 填写相关信息
+
+   ![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbka3en9lj20sw0gfgls.jpg)
+
+4. 填写好后提交
+
+   ![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbkb6f2ypj20sk06z74e.jpg)
+
+## 将 issue 和 milestones 关联
+
+进入到 issue 界面可以选 issue 属于哪个 milestone
+
+   ![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbkg9feuhj20tf0kw75v.jpg)
+
+不用点击 commit
+
+在里程碑里可以查看到包括的 issue
+
+![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbklntcebj20sq0dijs1.jpg)
+
+> 可以鼠标按住勾选框左边的地方拖动调整`优先顺序`
+>
+> 可以点击最上面的勾选框对包含的 issue `筛选`
+
+解决一个 issue 就 close 掉 issue ，在里程碑的界面会显示处理进度
+
+![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbkb6f2ypj20sk06z74e.jpg)
+
 # Projects
+
+## 关于 Projects
+
+projects 相当于融合了 issue 的 label 和 milestone。在一个界面就行操作。
+
+projects 提供项目管理功能。可以点击 Projects 进入管理界面，点击添加会让你输入项目名，下面的选项可以选择 auto ，也就是自动套用有的模板，就出现下面的界面。
+
+下图框选部分相当于是一个 milestone。
+
+![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnblvkpqvmj20sy07mmx9.jpg)
+
+下图这个东西叫看板。里面的列相当于 label。
+
+![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnblcbr24ej21gr0lr76y.jpg)
+
+> 可以把右边列的 issue 拖动到左边的列中去，也可以添加一个 card 转换成 issue。
+>
+> 上面显示的是进度。
+>
+> 在 issue 界面中被 close 的 issue 会自动出现在 done 那列中。
+
+> 只用拖动和一些简单的操作就可以管理进度，非常方便，而 milestone 的方式是采用勾选框勾选。
+>
+> projects 里面可以增加列，也就是说可以采用添加列的方式实现一些其他的功能，比如说添加列来归类 issue 的种类。
+
+## 自动将 issue 链接到 to do 那列
+
+1. 点击 Manage automation
+
+   ![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbm71gv6ej2092076dfu.jpg)
+
+2. 勾选
+
+   ![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbm8b93x1j20cq0a174k.jpg)
+
+   第一个勾选框意思就是新添加的 issue 和请求自动移动到这里
+
+   第二个就是重新打开的 issue 和请求自动移动到这里
+
+3. 连接
+
+   ![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbmci1raqj20t00diaay.jpg)
+
+4. 在 projects 页面就可以看到 issue 自动出现在 to do 那列
+
+   ![](http://ww1.sinaimg.cn/large/8f2bdb7fgy1fnbme1q6w0j20d807gt8s.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
